@@ -201,10 +201,10 @@ $(document).ready(function(){
   //=====>  Countdown (Edit this with your own date)  <====
   $("#countdown").countdown("2019/10/16", function(event) {
     var $this = $(this).html(event.strftime(''
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type"> Days </span></div></div> '
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %H </span> <span class="countdown-type">Hours </span></div></div>'
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %M </span> <span class="countdown-type">Minutes </span></div></div>'
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %S </span> <span class="countdown-type">Seconds </span></div></div>'));
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type"> Días </span></div></div> '
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %H </span> <span class="countdown-type">Horas </span></div></div>'
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %M </span> <span class="countdown-type">Minutos </span></div></div>'
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %S </span> <span class="countdown-type">Segundos </span></div></div>'));
   });
 
 
@@ -246,7 +246,8 @@ $(document).ready(function(){
           "name": $("#register-form #name").val(),
           "email": $("#register-form #email").val(),
           "subject": $("#register-form #subject").val(),
-          "phone": $("#register-form #telephone").val()
+          "phone": $("#register-form #telephone").val(),
+          "section": $("#register-form #section").val()
         },
         dataType: "json",
         success: function (data) {
@@ -282,7 +283,8 @@ $(document).ready(function(){
           "name": $("#intro-register-form #if-name").val(),
           "email": $("#intro-register-form #if-email").val(),
           "subject": $("#intro-register-form #if-subject").val(),
-          "phone": $("#intro-register-form #if-phone").val()
+          "phone": $("#intro-register-form #if-phone").val(),
+          "section": $("#intro-register-form #if-section").val()
         },
         dataType: "json",
         success: function (data) {
