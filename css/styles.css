@@ -2183,8 +2183,9 @@ body:after {
 .price-ticket-title {
   color: #ffffff;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 35px;
   text-align: center;
+  padding-top: 20px;
 }
 .price-ticket-type {
   text-align: center;
