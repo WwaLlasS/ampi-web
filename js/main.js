@@ -10,7 +10,7 @@ setTimeout(function(){
 
 
 //======= Run on Window Load ============
-$(window).load(function(){ 
+$(window).load(function(){
 
   //Viewport
   var windowHeight = $(window).height();
@@ -31,7 +31,7 @@ $(window).load(function(){
   $("#about-team").owlCarousel({
    	navigation : false, // Show next and prev buttons
     	slideSpeed : 300,
-    	paginationSpeed : 400,      
+    	paginationSpeed : 400,
     	responsiveRefreshRate : 200,
   	responsiveBaseWidth: window,
   	items : 4,
@@ -40,33 +40,33 @@ $(window).load(function(){
   	stopOnHover: true,
   	pagination: true,
   	//singleItem: true,
-  	navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"]     
+  	navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"]
   });
 
  $("#testimonial-carousel").owlCarousel({
     navigation : false, // Show next and prev buttons
     slideSpeed : 300,
-    paginationSpeed : 400,      
+    paginationSpeed : 400,
     responsiveRefreshRate : 200,
     responsiveBaseWidth: window,
     pagination: true,
-    singleItem: true,    
-    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],     
+    singleItem: true,
+    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],
   });
 
   $("#blog-itens-container").owlCarousel({
     navigation : false, // Show next and prev buttons
     slideSpeed : 300,
-    paginationSpeed : 400,      
+    paginationSpeed : 400,
     responsiveRefreshRate : 200,
     responsiveBaseWidth: window,
     pagination: true,
-    singleItem: false,    
-    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],     
+    singleItem: false,
+    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],
  	items : 3,
-  }); 
+  });
 
-  $("#sponsors-carousel").owlCarousel({ 
+  $("#sponsors-carousel").owlCarousel({
 	    navigation : false, // Show next and prev buttons
 	    slideSpeed : 300,
 	    paginationSpeed : 400,
@@ -79,13 +79,13 @@ $(window).load(function(){
       pagination: true,
 	    responsiveRefreshRate : 200,
     	responsiveBaseWidth: window,
-	    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],     
+	    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],
 	      // "singleItem:true" is a shortcut for:
-	      // items : 1, 
+	      // items : 1,
 	      // itemsDesktop : false,
 	      // itemsDesktopSmall : false,
 	      // itemsTablet: false,
-	      // itemsMobile : false	 
+	      // itemsMobile : false
 	});
 
   $("#main-carousel").owlCarousel({
@@ -94,8 +94,8 @@ $(window).load(function(){
     singleItem: true,
     autoPlay : false,
     stopOnHover : false,
-    //navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],     
-  }); 
+    //navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],
+  });
 
 
   //Schedule Item Progress Bar
@@ -151,11 +151,11 @@ $(window).load(function(){
   //WAYPOINTS
   $('#main-carousel').waypoint(function(direction) {
       if (direction === 'down') {
-        $('#header').addClass( 'header-stick');       
+        $('#header').addClass( 'header-stick');
       }
       else {
         $('#header').removeClass( 'header-stick');
-      }     
+      }
     },
     {
      offset: '-20px'
@@ -199,12 +199,12 @@ $(document).ready(function(){
     });
 
   //=====>  Countdown (Edit this with your own date)  <====
-  $("#countdown").countdown("2015/11/22", function(event) {
+  $("#countdown").countdown("2019/10/16", function(event) {
     var $this = $(this).html(event.strftime(''
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type"> Days </span></div></div> '
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %H </span> <span class="countdown-type">Hours </span></div></div>'
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %M </span> <span class="countdown-type">Minutes </span></div></div>'
-       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %S </span> <span class="countdown-type">Seconds </span></div></div>'));
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type"> Días </span></div></div> '
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %H </span> <span class="countdown-type">Horas </span></div></div>'
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %M </span> <span class="countdown-type">Minutos </span></div></div>'
+       + '<div class="countdown-col-wrapper col-xs-6 col-sm-3"><div class="countdown-col"><span class="countdown-time"> %S </span> <span class="countdown-type">Segundos </span></div></div>'));
   });
 
 
@@ -246,7 +246,8 @@ $(document).ready(function(){
           "name": $("#register-form #name").val(),
           "email": $("#register-form #email").val(),
           "subject": $("#register-form #subject").val(),
-          "phone": $("#register-form #telephone").val()
+          "phone": $("#register-form #telephone").val(),
+          "section": $("#register-form #section").val()
         },
         dataType: "json",
         success: function (data) {
@@ -259,8 +260,8 @@ $(document).ready(function(){
               .blur()
               .closest(".control-group")
               .removeClass("success")
-              .removeClass("error");              
-            
+              .removeClass("error");
+
           } else {
             pContactError.fadeIn(300);
             pContactSuccess.addClass("hidden");
@@ -282,7 +283,8 @@ $(document).ready(function(){
           "name": $("#intro-register-form #if-name").val(),
           "email": $("#intro-register-form #if-email").val(),
           "subject": $("#intro-register-form #if-subject").val(),
-          "phone": $("#intro-register-form #if-phone").val()
+          "phone": $("#intro-register-form #if-phone").val(),
+          "section": $("#intro-register-form #if-section").val()
         },
         dataType: "json",
         success: function (data) {
@@ -295,8 +297,8 @@ $(document).ready(function(){
               .blur()
               .closest(".control-group")
               .removeClass("success")
-              .removeClass("error");              
-            
+              .removeClass("error");
+
           } else {
             pContactError.fadeIn(300);
             pContactSuccess.addClass("hidden");
@@ -315,11 +317,11 @@ $(document).ready(function(){
 
   $('.modal-wrap').on('click', function () {
     hideModal();
-  });   
+  });
 
   $('.modal-bg').on('click', function () {
     hideModal();
-  }); 
+  });
 
 });
 
