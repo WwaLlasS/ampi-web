@@ -2255,7 +2255,6 @@ body:after {
 }
 .price-ticket-item-back {
   transform: rotateY(180deg);
-  background-color: #04cd8f;
   display: none;
 }
 @media (min-width:992px) {
