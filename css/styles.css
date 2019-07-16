@@ -2183,8 +2183,9 @@ body:after {
 .price-ticket-title {
   color: #ffffff;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 35px;
   text-align: center;
+  padding-top: 20px;
 }
 .price-ticket-type {
   text-align: center;
@@ -2254,7 +2255,6 @@ body:after {
 }
 .price-ticket-item-back {
   transform: rotateY(180deg);
-  background-color: #04cd8f;
   display: none;
 }
 @media (min-width:992px) {
