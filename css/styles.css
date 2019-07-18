@@ -1303,6 +1303,7 @@ body:after {
 .main-carousel .owl-controls {
   position: absolute;
   width: 100%;
+  height: 20px;
   bottom: 5px;
   left: 0;
   z-index: 888;
@@ -2403,4 +2404,7 @@ html.safari:after {
 .gecko .price-ticket-item:hover .price-ticket-item-wrapper,
 .gecko .price-ticket-item.hover .price-ticket-item-wrapper {
   transform: rotateY(0deg) !important;
+}
+.ampi-logo{
+  height: 150px;
 }
