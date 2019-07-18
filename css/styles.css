@@ -689,7 +689,7 @@ body:after {
   opacity: 1;
 }
 .header-logo {
-  width: 207px;
+  width: 158px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -698,7 +698,7 @@ body:after {
   float: left;
 }
 .header-logo img {
-  max-width: 100%;
+  max-width: 130%;
 }
 .header-stick {
   background-color: #3e4651 !important;
@@ -2256,7 +2256,7 @@ body:after {
 }
 .price-ticket-item-back {
   transform: rotateY(180deg);
-  background-color: #04cd8f;
+  background-color:  #3e4651;
   display: none;
 }
 @media (min-width:992px) {
