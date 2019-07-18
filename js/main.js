@@ -146,6 +146,7 @@ $(window).load(function(){
   $('.tab').hide();
   $('#faq-tab1').show();
   $('#schedule-tab1').show();
+  $('#schedule-tab4').show();
 
 
   //WAYPOINTS
