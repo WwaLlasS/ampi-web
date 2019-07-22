@@ -98,6 +98,17 @@ Primary use:  Event and Conference Landing age
   padding-left: 0;
   margin-left: 0;
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.circle-img {
+  width: 120px;
+  height: 120px;
+  object-fit: scale-down;
+}
 /*============================================================================
   >> 01. General
   ============================================================================
@@ -2213,10 +2224,10 @@ body:after {
   perspective: 1000;
 }
 /* flip the pane when hovered */
-.price-ticket-item:hover .price-ticket-item-wrapper,
+/*.price-ticket-item:hover .price-ticket-item-wrapper,
 .price-ticket-item.hover .price-ticket-item-wrapper {
   transform: rotateY(180deg);
-}
+}*/
 .price-ticket-item-wrapper {
   position: relative;
 }
@@ -2280,7 +2291,7 @@ body:after {
 }
 .ticket-item-buy-ico {
   color: #ffffff;
-  font-size: 42px;
+  font-size: 14px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
