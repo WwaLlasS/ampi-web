@@ -105,9 +105,10 @@ Primary use:  Event and Conference Landing age
 }
 
 .circle-img {
-  width: 120px;
+  width: 120px !important;
   height: 120px;
   object-fit: scale-down;
+  background: #FFF;
 }
 /*============================================================================
   >> 01. General
