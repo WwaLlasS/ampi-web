@@ -249,7 +249,7 @@ body:after {
   background: url('../img/bgmask2.png') no-repeat center center #3e4651;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: url('../img/bgmask2.png') no-repeat center center #04cd8f;
+  background: url('../img/bgmask2.png') no-repeat center center #607E34;
 }
 .inverted-section2 .title-section {
   border-bottom-color: #ffffff;
@@ -342,7 +342,7 @@ body:after {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: url('../img/bgmask-btn.png') no-repeat top left #04cd8f !important;
+  background: url('../img/bgmask-btn.png') no-repeat top left #607E34 !important;
 }
 .btn:before {
   content: '';
@@ -1468,7 +1468,7 @@ body:after {
   padding: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
-  background: url('../img/bgmask3.png') no-repeat center center #029669;
+  background: url('../img/bgmask3.png') no-repeat center center #607E34;
   min-height: 160px;
   margin-top: 0px;
   margin-bottom: 20px;
